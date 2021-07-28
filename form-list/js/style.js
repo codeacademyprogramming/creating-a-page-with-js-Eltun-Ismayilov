@@ -27,7 +27,7 @@ myButton.addEventListener("click",(e)=>{
         xSpan.innerHTML="x"
         myLi.appendChild(xSpan);
 
-        // // creat dell
+        // // // creat dell
         
         const xDel=document.createElement("pre");
         xDel.innerHTML="del"
@@ -55,15 +55,20 @@ myButton.addEventListener("click",(e)=>{
 
 
     const del=document.getElementsByTagName("pre")
+
     for (let i = 0; i < del.length; i++) {
     del[i].addEventListener("click",()=>{
 
         del[i].parentElement.style.textDecoration="line-through"
         del[i].parentElement.style.textTransform="uppercase"
+       
 
     })
         
     }
+    
+ 
+    
     
     inputText.value="";
 })
